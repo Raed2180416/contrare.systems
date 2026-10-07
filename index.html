@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mēdes — the page holds still, you go deeper</title>
+<meta name="description" content="Medes turns any book into a textbook that goes as deep as you need. Pull on a word and the page opens beneath the sentence. Go down as far as you like, then surface exactly where you were. Coming soon from Contrare Systems.">
+<meta name="theme-color" content="#F6F4EF">
+<meta property="og:title" content="mēdes — the page holds still. You go deeper.">
+<meta property="og:description" content="A calm place for difficult ideas. Coming soon from Contrare Systems.">
+<meta property="og:image" content="https://contrare.systems/og.png">
+<meta property="og:url" content="https://contrare.systems/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#surface" aria-label="mēdes, back to the surface">
+    <svg class="lever" id="lever" viewBox="0 0 40 40" aria-hidden="true">
+      <g class="lever-beam"><line x1="4" y1="20" x2="36" y2="20"/><circle cx="34" cy="20" r="3.2"/></g>
+      <path class="lever-fulcrum" d="M20 21.5 L15 31 L25 31 Z"/>
+    </svg>
+    <span class="wordmark">mēdes</span>
+  </a>
+  <div class="nav-right">
+    <span class="soon-pill"><span class="dot"></span>Coming soon</span>
+    <a class="by" href="#contrare" aria-label="Contrare Systems">
+      <svg viewBox="0 0 44 28" class="crmark" aria-hidden="true">
+        <path d="M17 4 A10 10 0 1 0 17 24"/><path d="M27 4 A10 10 0 1 1 27 24"/>
+        <g class="morse"><rect x="21" y="2" width="2" height="4"/><circle cx="22" cy="8.5" r="1"/><rect x="21" y="11" width="2" height="4"/><circle cx="22" cy="17.5" r="1"/><circle cx="22" cy="21" r="1"/><rect x="21" y="23" width="2" height="4"/></g>
+      </svg>
+    </a>
+  </div>
+</header>
+
+<nav class="gauge" id="gauge" aria-label="Depth">
+  <ol>
+    <li><a href="#surface" data-for="surface"><span>Surface</span></a></li>
+    <li><a href="#figure" data-for="figure"><span>Living figure</span></a></li>
+    <li><a href="#fixed" data-for="fixed"><span>Held fixed</span></a></li>
+    <li><a href="#context" data-for="context"><span>In context</span></a></li>
+    <li><a href="#promises" data-for="promises"><span>Promises</span></a></li>
+    <li><a href="#stands" data-for="stands"><span>Where it stands</span></a></li>
+    <li><a href="#floor" data-for="floor"><span>The floor</span></a></li>
+  </ol>
+</nav>
+
+<main>
+
+<!-- ============ SURFACE ============ -->
+<section class="stratum s0" id="surface" data-depth="0">
+  <div class="wrap">
+    <p class="eyebrow">mēdes · a reading room for difficult ideas · in the lab</p>
+    <h1>The page holds still.<br><em>You go deeper.</em></h1>
+    <p class="lede">Open any book you own. When a sentence stops you, pull on the word. The page opens right there, beneath the line, and shows you what’s underneath. Pull again, as deep as you need. Then surface exactly where you were.</p>
+    <div class="hero-cta">
+      <a class="btn" href="#floor">Join the first readers</a>
+      <span class="hint"><span class="hint-dot"></span>The passage below works. Pull an underlined phrase.</span>
+    </div>
+
+    <article class="page" id="page" aria-label="Interactive reading preview">
+      <header class="page-head">
+        <span class="page-meta">Your book · Ch. 4 · Reading evidence</span>
+        <span class="page-meta page-depth" id="pageDepth">depth 0 · surface</span>
+      </header>
+      <h2 class="page-title">4.2&ensp;When a positive isn’t</h2>
+      <div class="page-body" id="pageBody">
+        <div class="para"><span class="sent">Suppose 1 person in 100 has a certain condition.</span> <span class="sent">A screening test catches 90 of every 100 people who have it, and wrongly flags 5 of every 100 who don’t.</span> <span class="sent">Your result comes back positive. What are the chances you actually have it?</span></div>
+        <div class="para"><span class="sent">Most people say about ninety percent. The real answer is closer to fifteen.</span> <span class="sent">The puzzle dissolves once you take the <button class="pull" data-k="base">base rate</button> seriously, and stop reading <button class="pull" data-k="cond">P(condition | positive)</button> as though it were <span class="nw"><button class="pull" data-k="inv">P(positive | condition)</button>.</span></span> <span class="sent">The two are linked by <button class="pull" data-k="bayes">Bayes’ theorem</button>, but they are different numbers answering different questions.</span></div>
+      </div>
+      <footer class="page-foot">
+        <span>Esc closes the deepest layer · select any text to pull it</span>
+        <span>Sample passage written for this preview</span>
+      </footer>
+      <button class="pull-float" id="pullFloat" type="button" hidden>Pull ↓</button>
+    </article>
+  </div>
+</section>
+
+<!-- ============ LIVING FIGURE ============ -->
+<section class="stratum s1" id="figure" data-depth="1">
+  <div class="wrap">
+    <div class="head">
+      <span class="depth-num">−1</span>
+      <div>
+        <h2>A figure built for <em>your</em> blocker,<br>not a chart about the topic.</h2>
+        <p>The confusion above isn’t “probability.” It’s one specific thing: which crowd sits under the fraction. So Medes builds a living figure around exactly that. It shows one case three ways and keeps them in sync. Pick a crowd and watch it move.</p>
+      </div>
+    </div>
+
+    <div class="figure card" id="bayes">
+      <div class="fig-top">
+        <div class="fig-title">
+          <span class="tag tag-ill">Illustrative · not from your book</span>
+          <h3>Which crowd are we counting inside?</h3>
+        </div>
+        <div class="seg lenses" role="tablist" aria-label="View">
+          <button role="tab" data-view="crowd" aria-selected="true">Crowd</button>
+          <button role="tab" data-view="paths" aria-selected="false">Paths</button>
+          <button role="tab" data-view="formula" aria-selected="false">Formula</button>
+        </div>
+      </div>
+
+      <div class="crowd-pick" id="hlSeg" aria-label="Gather a crowd">
+        <span class="pick-label">Gather</span>
+        <button data-hl="all" aria-pressed="true">Everyone</button>
+        <button data-hl="pos" aria-pressed="false">Everyone who tests positive</button>
+        <button data-hl="cond" aria-pressed="false">Everyone who has it</button>
+      </div>
+
+      <div class="views">
+        <div class="view" data-view="crowd"><canvas id="crowd" aria-label="1,000 people as dots, regrouping"></canvas></div>
+        <div class="view" data-view="paths" hidden><svg id="tree" viewBox="0 0 560 260" role="img" aria-label="Probability tree"></svg></div>
+        <div class="view" data-view="formula" hidden><div class="formula" id="formula"></div></div>
+        <ul class="legend" id="legend"></ul>
+      </div>
+
+      <p class="narration" id="narration"></p>
+
+      <div class="slider-row">
+        <label for="baseRate">How common is the condition?</label>
+        <input type="range" id="baseRate" min="0" max="100" step="0.5">
+        <output id="baseOut"></output>
+      </div>
+
+      <details class="try" id="tryBox">
+        <summary>Try this <span>· optional, never graded</span></summary>
+        <p>For <b>P(condition | positive)</b>, which crowd goes on the bottom of the fraction?</p>
+        <div class="opts">
+          <button data-a="cond">Everyone who has it</button>
+          <button data-a="pos">Everyone who tested positive</button>
+          <button data-a="all">Everyone</button>
+        </div>
+        <p class="reply" id="tryFb"></p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HELD FIXED ============ -->
+<section class="stratum s2" id="fixed" data-depth="2">
+  <div class="wrap">
+    <div class="head">
+      <span class="depth-num">−2</span>
+      <div>
+        <h2>Some questions hide an assumption.<br><em>Medes hands it to you.</em></h2>
+        <p>“What happens to kinetic energy if you double the mass?” The honest answer is: it depends on what you keep still. Choose what to keep fixed, then change the mass.</p>
+      </div>
+    </div>
+
+    <div class="figure card physics" id="physics">
+      <div class="fig-top">
+        <div class="fig-title"><span class="tag tag-ill">Illustrative · instrument: vary one thing</span></div>
+        <div class="seg" id="holdSeg" aria-label="What stays fixed">
+          <button data-hold="v" aria-pressed="true">Keep speed fixed</button>
+          <button data-hold="p" aria-pressed="false">Keep momentum fixed</button>
+        </div>
+      </div>
+      <svg id="track" viewBox="0 0 600 230" role="img" aria-label="Two blocks travelling for the same time"></svg>
+      <div class="slider-row">
+        <label for="mass">Mass</label>
+        <input type="range" id="mass" min="1" max="4" step="0.25" value="2">
+        <output id="massOut"></output>
+      </div>
+      <div class="phys-read">
+        <p class="phys-formula" id="physFormula"></p>
+        <p class="narration" id="physNarr"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ IN CONTEXT ============ -->
+<section class="stratum s3" id="context" data-depth="3">
+  <div class="wrap">
+    <div class="head">
+      <span class="depth-num">−3</span>
+      <div>
+        <h2>Not every blocker is a formula.</h2>
+        <p>In history, law, literature and research, the trouble is often a sentence quoted without its neighbours. Medes widens the frame around it, then asks you a question it will never grade.</p>
+      </div>
+    </div>
+
+    <div class="card ctx" id="ctx">
+      <span class="tag tag-local">Read in context · runs on your device · no model call</span>
+      <div class="ctx-doc">
+        <p class="ctx-hidden">The fire at Hallow is attested in the diary of Marta Venn, the ferry-keeper, whose entry for the fifteenth describes “the bridge alight from end to end” and soldiers on the far bank.</p>
+        <p class="ctx-sel"><mark>Two independent accounts confirm that the river bridge at Hallow was burned on the night of the fourteenth.</mark></p>
+        <p class="ctx-hidden">The second account, the <i>Courier</i>’s report of the twenty-ninth, is usually cited as corroboration. Its correspondent, <span class="ctx-key">however</span>, names Venn’s diary as his <span class="ctx-key">only source</span>.</p>
+      </div>
+      <button class="btn btn-ghost" id="ctxBtn" type="button">Read in context</button>
+      <div class="ctx-ask" id="ctxAsk" hidden>
+        <p class="ctx-q">Does the surrounding passage qualify this, change who is speaking, or narrow its scope?</p>
+        <div class="opts" id="ctxOpts">
+          <button data-r="qualify">It qualifies it</button>
+          <button data-r="speaker">It changes who is speaking</button>
+          <button data-r="scope">It narrows the scope</button>
+          <button data-r="stands">It leaves it standing</button>
+        </div>
+        <p class="reply" id="ctxReply"></p>
+        <label class="mind">What would change your mind?<input type="text" placeholder="Your reason, kept beside the passage"></label>
+      </div>
+      <p class="fine">Sample passage written for this preview. Hallow is fictional.</p>
+    </div>
+  </div>
+</section>
+
+<div class="descent" aria-hidden="true">
+  <p>Keep going.<br><em>Every difficult sentence has a floor.</em></p>
+</div>
+
+<!-- ============ PROMISES ============ -->
+<section class="stratum s4 dark" id="promises" data-depth="4">
+  <div class="wrap">
+    <div class="head">
+      <span class="depth-num">−4</span>
+      <div><h2>Five promises, all the way down.</h2></div>
+    </div>
+    <ol class="vows">
+      <li><h3>The original is never rewritten.</h3><p>Your book stays your book. Everything Medes adds opens <i>beneath</i> the text, and one gesture closes it again.</p></li>
+      <li><h3>Every answer says where it came from.</h3><p><span class="tag tag-src">From your book</span> <span class="tag tag-gen">General explanation</span> <span class="tag tag-ill">Illustrative</span><br>Each label reflects where the help actually came from. It isn’t decoration.</p></li>
+      <li><h3>When it can’t be sure, it shows you the page.</h3><p>An honest “not sure” beats a confident wrong answer. If something can’t be grounded, Medes says so and hands you back the original.</p></li>
+      <li><h3>Nothing opens on its own.</h3><p>No chat window lurking in the corner, and no streaks or badges. You pull, it answers, it folds away. The tutor offers a hint before it gives an answer.</p></li>
+      <li><h3>Your library lives with you.</h3><p>Books, notes and every layer you open are local files you own. When a model is used, it sees the idea you pulled, not your book.</p></li>
+    </ol>
+    <p class="both">Built for two readers at once: the first-year who’s lost but curious, and the specialist who wants the assumptions, the notation, and room to disagree. They make the same gesture and aim it at different depths.</p>
+  </div>
+</section>
+
+<!-- ============ WHERE IT STANDS ============ -->
+<section class="stratum s5 dark" id="stands" data-depth="5">
+  <div class="wrap">
+    <div class="head">
+      <span class="depth-num">−5</span>
+      <div><h2>Where it stands, honestly.</h2><p>This page sketches the Medes we’re building. The app itself is still in the lab. No invented numbers, no borrowed logos.</p></div>
+    </div>
+    <div class="cols">
+      <div><h3>Working in prototypes</h3><ul>
+        <li>Pulling at any depth, with an exact return to your sentence</li>
+        <li>Shared-state figures: crowd, paths and formula as one case</li>
+        <li>Aiming help at meaning, notation, mechanism and more</li>
+        <li>A local workspace that restores every layer and note</li>
+        <li>A native, GPU-rendered reader study</li>
+      </ul></div>
+      <div><h3>Being designed</h3><ul>
+        <li>The final reading interface you see sketched here</li>
+        <li>Read in context and evidence comparison for prose</li>
+        <li>PDF and EPUB, with properly typeset math</li>
+        <li>A wider library of reviewed figures across subjects</li>
+      </ul></div>
+      <div><h3>On the horizon</h3><ul>
+        <li>A small on-device model that picks and fills figures</li>
+        <li>Figures that return as review cards</li>
+        <li>Goal mode: an editable route through books you own</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FLOOR ============ -->
+<section class="stratum s6 dark floor" id="floor" data-depth="6">
+  <div class="wrap">
+    <p class="floor-mark">You’ve reached the floor.</p>
+    <h2>Coming soon.</h2>
+    <p class="floor-lede">We’re opening Medes to a small group of first readers: students, researchers, and anyone stubborn about understanding things properly.</p>
+    <a class="btn btn-light" href="mailto:research.contrare@outlook.com?subject=Medes%20%E2%80%94%20first%20readers&body=I%27d%20like%20to%20read%20with%20Medes.%0A%0AWhat%20I%27m%20reading%20right%20now%3A%20">Join the first readers</a>
+    <p class="fine">Tell us what you’re reading. We answer every note.</p>
+    <a class="surface-link" href="#surface">↑ Back to the surface</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot dark" id="contrare">
+  <div class="foot-brand">
+    <svg viewBox="0 0 44 28" class="crmark" aria-hidden="true">
+      <path d="M17 4 A10 10 0 1 0 17 24"/><path d="M27 4 A10 10 0 1 1 27 24"/>
+      <g class="morse"><rect x="21" y="2" width="2" height="4"/><circle cx="22" cy="8.5" r="1"/><rect x="21" y="11" width="2" height="4"/><circle cx="22" cy="17.5" r="1"/><circle cx="22" cy="21" r="1"/><rect x="21" y="23" width="2" height="4"/></g>
+    </svg>
+    <div>
+      <p class="foot-name">Contrare Systems</p>
+      <p>An independent research lab in Bengaluru. Research before hype. Evidence before opinion.</p>
+    </div>
+  </div>
+  <p class="foot-meta">© 2026 Contrare Systems · <a href="mailto:research.contrare@outlook.com">research.contrare@outlook.com</a></p>
+  <p class="foot-quiet">This page draws nothing while you read. It moves only when you do.</p>
+</footer>
+
+<div class="eureka" id="eureka" role="status" hidden>
+  <p class="e-top">ARC + Medes</p>
+  <p class="e-main">“Give me a place to stand.”</p>
+  <p class="e-sub">A small, well-placed explanation moves a very heavy idea.</p>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
